@@ -16,7 +16,7 @@ const Navbar = () => (
       className={` w-full  mx-auto flex  justify-between items-center max-w-7xl `}
     >
       <img
-        src="/nitplogo.png"
+        src="/thinkinidalogo.png"
         alt="search"
         className="w-[100px] h-[100px] object-contain "
       />
