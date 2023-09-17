@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.contactimage{
+  background: url('../public/contact.jpg') center center fixed;
+  -webkit-background-size:cover ;
+  -moz-background-size:cover ;
+  -o-background-size:cover ;
+  -ms-background-size:cover ;
+  background-size: cover;
+}
 * {
   margin: 0;
   padding: 0;

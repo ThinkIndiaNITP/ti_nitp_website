@@ -10,7 +10,7 @@ const Navbar = () => (
     variants={navVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} w-full fixed top-0  z-20 items-center px-6   bg-gray-300  `}
+    className={`${styles.xPaddings} w-full fixed top-0  z-20 items-center px-6   bg-gray-500  `}
   >
     <div
       className={` w-full  mx-auto flex  justify-between items-center max-w-7xl `}
