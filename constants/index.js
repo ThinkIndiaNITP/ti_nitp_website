@@ -35,27 +35,27 @@ export const exploreWorlds = [
   {
     id: "Event-1",
     imgUrl: "",
-    title: "",
+    title: "Event-1",
   },
   {
     id: "Event-2",
     imgUrl: "",
-    title: "",
+    title: "Event-2",
   },
   {
     id: "Event-3",
     imgUrl: "",
-    title: "",
+    title: "Event-3",
   },
   {
     id: "Event-4",
     imgUrl: "",
-    title: "",
+    title: "Event-4",
   },
   {
     id: "Event-5",
     imgUrl: "",
-    title: "",
+    title: "Event-5",
   },
 ];
 
