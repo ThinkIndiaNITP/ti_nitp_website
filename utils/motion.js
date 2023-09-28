@@ -36,7 +36,7 @@ export const slideIn = (direction, type, delay, duration) => ({
   },
 });
 
-export const staggerContainer = (staggerChildren, delayChildren) => ({
+export const Event = (staggerChildren, delayChildren) => ({
   hidden: {},
   show: {
     transition: {
