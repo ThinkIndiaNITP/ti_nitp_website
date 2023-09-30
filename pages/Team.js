@@ -1,9 +1,11 @@
 import React from "react";
-
+import styles from "../styles";
 const Team = () => {
   return (
     <>
-      <div>Team of Think India</div>
+      <div className={`${styles.paddings} relative z-10`}>
+        Team of Think India
+      </div>
     </>
   );
 };
