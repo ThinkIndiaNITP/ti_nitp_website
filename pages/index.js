@@ -1,4 +1,4 @@
-import { GetStarted, Hero, WhatsNew } from "../sections";
+import { GetStarted, Hero, WhatsNew, Faqsection } from "../sections";
 
 const Home = () => (
   <div className="bg-primary-white overflow-hidden">
@@ -12,6 +12,9 @@ const Home = () => (
       <WhatsNew />
     </div>
     <div className="gradient-04 z-0" />
+    <div className="realtive">
+      <Faqsection />
+    </div>
   </div>
 );
 

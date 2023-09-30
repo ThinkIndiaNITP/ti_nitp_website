@@ -25,7 +25,7 @@ const Navbar = () => (
         <ul className="list-none hidden sm:flex flex-row gap-10 py-8">
           {navLinks.map((nav) => (
             <li
-              key={nav.id}
+              key={nav.name}
               className="
                  text-black text-secondary
                hover:text-orange-100 text-[18px] font-medium cursor-pointer"
