@@ -131,17 +131,17 @@ const Team = () => {
 
   return (
     <>
-      <div className={`${styles.paddings} relative z-10`}>
-        <div className="bg-gray-100 py-8">
+      <div className={`${styles.paddings} relative z-10`} style={{ background: 'linear-gradient(to bottom, #3498db, #ffffff)', borderRadius: '10px', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)' }} >
+        <div className="bg-gray-100 py-8" style={{ background: 'linear-gradient(to right, #ff5733, #f2b134)', borderRadius: '10px', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)' }}>
           <div className="container mx-auto">
             <div className="p-5">
-            <h1 className="text-3xl font-semibold mb-8">Our Team</h1>
+            <h1 className="text-3xl font-semibold pl-4">Meet Our Exceptional Team: The Driving Force Behind Our Success</h1>
             </div>
             <div className="p-5">
-  <button className="w-2/12 bg-red-500 mx-4 hover:bg-red-600" onClick={() => setView("22-23")}>
+  <button className="w-2/12 bg-yellow-500 mx-4 hover:bg-red-600" onClick={() => setView("22-23")}>
     22-23
   </button>
-  <button className="w-2/12 bg-red-500 mx-3 hover:bg-red-600" onClick={() => setView("23-24")}>
+  <button className="w-2/12 bg-yellow-500 mx-3 hover:bg-red-600" onClick={() => setView("23-24")}>
     23-24
   </button>
 </div>

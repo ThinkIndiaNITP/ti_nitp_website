@@ -1,16 +1,12 @@
-// TeamCard.js
-
 import React from 'react';
 
-const TeamCard = ({ name, role, imageSrc }) => {
+const TeamCard = ({ name, role, imageSrc, onClick }) => {
   return (
-    <div className="max-w-md mx-auto sm:w-1/2 lg:w-1/3 p-4">
-      <div className="bg-white shadow-md rounded-lg overflow-hidden">
-        <img className="w-full h-48 object-cover" src={imageSrc} alt={name} />
-        <div className="p-4">
-          <h2 className="text-xl font-semibold">{name}</h2>
-          <p className="text-gray-600">{role}</p>
-        </div>
+    <div className="w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2 group transform scale-100 hover:scale-110 transition-transform cursor-pointer">
+      <div className="border border-gray-300 shadow p-4 bg-white">
+        <img src={imageSrc} alt={name} className="rounded-full w-20 h-20 mx-auto mb-3" />
+        <h3 className="text-lg font-semibold">{name}</h3>
+        <p className="text-gray-600">{role}</p>
       </div>
     </div>
   );
