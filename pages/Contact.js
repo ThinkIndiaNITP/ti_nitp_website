@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Controller, useForm } from "react-hook-form";
-import IconEmail from "../app/icons/IconEmail";
-import IconPhone from "../app/icons/IconPhone";
+import IconEmail from "../components/icons/IconEmail"
+import IconPhone from "../components/icons/IconPhone";
 import IconInfo from "../components/IconInfo";
 import FormElements from "../components/FormElements";
 
