@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
           href="https://stijndv.com/fonts/Eudoxus-Sans.css"
         />
       </Head>
-      <div className="pb-12">
+      <div className="pb-12 sm:w-48 overflow-x-hidden">
         <Navbar />
       </div>
       {children}
