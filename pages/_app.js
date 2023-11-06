@@ -3,9 +3,11 @@ import Layout from "../components/Layout";
 const App = ({ Component, pageProps }) => {
   return (
     <>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <div className="overflow-x-hidden">
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </div>
     </>
   );
 };
