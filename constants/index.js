@@ -18,16 +18,19 @@ export const navLinks = [
     title: "Team",
   },
   {
+    id: 4,
     name: "About Us",
     href: "/About",
     title: "About",
   },
   {
+    id: 5,
     name: "Gallery",
     href: "/Gallery",
     title: "Gallery",
   },
   {
+    id: 6,
     name: "Contact Us",
     href: "/Contact",
     title: "Contact",
@@ -36,27 +39,27 @@ export const navLinks = [
 
 export const exploreWorlds = [
   {
-    id: "Event-1",
+    id: 7,
     imgUrl: "",
     title: "Event-1",
   },
   {
-    id: "Event-2",
+    id: 8,
     imgUrl: "",
     title: "Event-2",
   },
   {
-    id: "Event-3",
+    id: 9,
     imgUrl: "",
     title: "Event-3",
   },
   {
-    id: "Event-4",
+    id: 10,
     imgUrl: "",
     title: "Event-4",
   },
   {
-    id: "Event-5",
+    id: 11,
     imgUrl: "",
     title: "Event-5",
   },
@@ -64,21 +67,25 @@ export const exploreWorlds = [
 
 export const socials = [
   {
+    id: 12,
     name: "twitter",
     href: "",
     url: "/twitter.svg",
   },
   {
+    id: 13,
     name: "linkedin",
     href: "",
     url: "/linkedin.svg",
   },
   {
+    id: 14,
     name: "instagram",
     href: "",
     url: "/instagram.svg",
   },
   {
+    id: 15,
     name: "facebook",
     href: "",
     url: "/facebook.svg",
