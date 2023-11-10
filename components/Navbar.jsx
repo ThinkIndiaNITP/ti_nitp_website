@@ -34,7 +34,7 @@ const Navbar = () => {
       className={`${
         styles.xPaddings
       } w-full fixed top-0 flex z-20 items-center  bg-gray-500 ${
-        scrolled ? "bg-orange-100" : "bg-gray"
+        scrolled ? "hero-gradient1 " : "bg-gray-400"
       } `}
     >
       <div
