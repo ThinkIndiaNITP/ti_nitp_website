@@ -40,6 +40,23 @@
     #f1edf2 100%
   );
 }
+.hero-gradient1 {
+  background: linear-gradient(
+    97.86deg,
+    #f9e8c5 0%,
+    #f1edf2 45.65%,
+    rgb(175, 236, 174) 100%
+  );
+}
+
+/* In your CSS or Tailwind CSS configuration */
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
 
 /* .gradient-02 {
   position: absolute;
