@@ -3,32 +3,32 @@
 import { motion } from "framer-motion";
 
 import styles from "../styles";
-import { startingFeatures } from "../constants";
-import { StartSteps, TitleText, TypingText } from "../components";
+
 import { Event, fadeIn, planetVariants } from "../utils/motion";
 
 const GetStarted = () => (
   <section
     className={`${styles.paddings} bg-green-100  m-4 rounded-xl relative z-10`}
   >
-    <h1 className="mt-[8px] pr-52 font-bold md:text-[64px] text-[40px] text-black">
-      Lorem
+    <h1 className="mt-[8px] pr-52 font-bold md:text-[30px] text-[10px] text-black">
+      Our PI<br></br>
+      Shiv Shankar Choudhary
     </h1>
     <motion.div
       variants={Event}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+      viewport={{ once: true, amount: 0.25 }}
+      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-5`}
     >
       <motion.div
         variants={planetVariants("left")}
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src=""
+          src="./pi.jpg"
           alt="get-started"
-          className="w-[90%] h-[90%] object-contain"
+          className="w-[50%] h-[60%] mr-52"
         />
       </motion.div>
       <motion.div

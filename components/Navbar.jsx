@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { navLinks } from "../constants";
 import styles from "../styles";
-import { navVariants } from "../utils/motion";
+import { navVariants, zoomIn } from "../utils/motion";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -27,13 +27,14 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      variants={navVariants}
+      // variants={navVariants}
       initial="hidden"
       whileInView="show"
+      variants={zoomIn}
       className={`${
         styles.xPaddings
       } w-full fixed top-0 flex z-20 items-center  bg-gray-500 ${
-        scrolled ? "bg-gray-200" : "bg-primary"
+        scrolled ? "hero-gradient1 " : "bg-gray-400"
       } `}
     >
       <div
@@ -70,7 +71,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden md:flex" : "flex"
-            } p-6 black-gradient bg-orange-300  absolute mr-4 top-20  my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 black-gradient bg-orange-300 left-0  ml-64 absolute mr-4  top-20  my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (

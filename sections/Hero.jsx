@@ -11,7 +11,7 @@ const Hero = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-row`}
     >
       <div className="flex mt-6 justify-center  mb-20 items-center flex-col relative z-10">
@@ -25,12 +25,24 @@ const Hero = () => (
         variants={slideIn("right", "tween", 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
-        <div className="absolute w-full h-[300px] hero-gradient  z-[0] top-[130px]" />
+        {/* <div
+          className={`absolute w-full h-[300px] ${
+            "hero-gradient" + " hidden md:block"
+          }  ${"hero-gradient2" + " show md:block"} z-[0] top-[130px]`}
+        /> */}
+        <div
+          className={`absolute w-full h-[300px] 
+     ${"hero-gradient  hidden lg:block "} z-[0] top-[100px]  ${"hero-gradient lg:block show"}`}
+        />
 
         <img
-          src="/"
-          alt="hero_cover"
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
+          style={{
+            width: "100%",
+            padding: "50px",
+            margin: "10px",
+          }}
+          src="/thinkinidalogo.png"
+          className="w-full  sm:h-[500px] sm:m-[10px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
       </motion.div>
     </motion.div>

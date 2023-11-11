@@ -11,6 +11,7 @@ const Footer = () => (
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
+    viewport={{ once: true }}
     className={`${styles.xPaddings} py-8 relative`}
   >
     <div className="footer-gradient" />
@@ -32,12 +33,12 @@ const Footer = () => (
 
           <div className="flex gap-4">
             {socials.map((social) => (
-              <Link href={social.href} target="_blank">
+              <Link href={social.href} key={social.id} target="_blank">
                 <img
-                  key={social.name}
+                  key={social.id}
                   src={social.url}
                   alt={social.name}
-                  className="w-[24px] h-[24px] object-contain cursor-pointer bg-black rounded-full "
+                  className="w-[24px] h-[24px] object-contain cursor-pointer bg-black rounded-full"
                 />
               </Link>
             ))}

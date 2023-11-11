@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.contactimage{
-  background: url('../public/contact.jpg') center center fixed;
-  -webkit-background-size:cover ;
-  -moz-background-size:cover ;
-  -o-background-size:cover ;
-  -ms-background-size:cover ;
+.contactimage {
+  background: url("../public/contact.jpg") center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
   background-size: cover;
 }
 * {
@@ -40,8 +40,25 @@
     #f1edf2 100%
   );
 }
+.hero-gradient1 {
+  background: linear-gradient(
+    97.86deg,
+    #f9e8c5 0%,
+    #f1edf2 45.65%,
+    rgb(175, 236, 174) 100%
+  );
+}
 
-.gradient-02 {
+/* In your CSS or Tailwind CSS configuration */
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .gradient-02 {
   position: absolute;
   width: 200px;
   height: 438px;
@@ -50,7 +67,7 @@
 
   background: #eb8908;
   filter: blur(190px);
-}
+} */
 
 .glassmorphism {
   background: rgba(255, 255, 255, 0.25);
@@ -60,7 +77,7 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.gradient-03 {
+/* .gradient-03 {
   position: absolute;
   width: 404px;
   height: 800px;
@@ -70,9 +87,9 @@
   background: rgba(249, 128, 14, 0.8);
   filter: blur(175px);
   transform: rotate(-114.2deg);
-}
+} */
 
-.gradient-04 {
+/* .gradient-04 {
   position: absolute;
   width: 304px;
   height: 100vh;
@@ -82,17 +99,17 @@
   background: rgba(235, 130, 18, 0.75);
   filter: blur(200px);
   transform: rotate(-53.13deg);
-}
+} */
 
-.gradient-05 {
+/* .gradient-05 {
   background: linear-gradient(
     180deg,
     rgba(10, 248, 30, 0.682) 0%,
     rgba(239, 230, 230, 0.841) 100%
   );
-}
+} */
 
-.feedback-gradient {
+/* .feedback-gradient {
   position: absolute;
   width: 200px;
   height: 316px;
@@ -101,7 +118,7 @@
 
   background: #8d39a3;
   filter: blur(175px);
-}
+} */
 
 .footer-gradient {
   position: absolute;
