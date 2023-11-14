@@ -40,27 +40,27 @@ export const navLinks = [
 export const exploreWorlds = [
   {
     id: 7,
-    imgUrl: "",
+    imgUrl: "./contact.jpg",
     title: "Event-1",
   },
   {
     id: 8,
-    imgUrl: "",
+    imgUrl: "./contactus1.jpg",
     title: "Event-2",
   },
   {
     id: 9,
-    imgUrl: "",
+    imgUrl: "./contact.jpg",
     title: "Event-3",
   },
   {
     id: 10,
-    imgUrl: "",
+    imgUrl: "./contact.jpg",
     title: "Event-4",
   },
   {
     id: 11,
-    imgUrl: "",
+    imgUrl: "./contact.jpg",
     title: "Event-5",
   },
 ];
