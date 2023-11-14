@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 import styles from "../styles";
 
-import { Event, fadeIn, planetVariants } from "../utils/motion";
+import { Event, fadeIn, planetVariants, slideIn } from "../utils/motion";
 
 const GetStarted = () => (
   <section
-    className={`${styles.paddings} bg-green-100  m-4 rounded-xl relative z-10`}
+    className={`${styles.paddings} glassmorphism bg-green-100  m-4 rounded-xl relative z-10`}
   >
     <h1 className="mt-[8px] pr-52 font-bold md:text-[30px] text-[10px] text-black">
       Our PI<br></br>
@@ -22,13 +22,14 @@ const GetStarted = () => (
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-5`}
     >
       <motion.div
-        variants={planetVariants("left")}
+        // variants={planetVariants("left")}
+        variants={slideIn("left", "tween", 0.2, 1)}
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
           src="./pi.jpg"
           alt="get-started"
-          className="w-[50%] h-[60%] mr-52"
+          className={`w-[50%] h-[60%] mr-24 sm:flex sm:items-center`}
         />
       </motion.div>
       <motion.div

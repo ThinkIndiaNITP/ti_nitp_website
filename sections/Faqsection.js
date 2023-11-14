@@ -8,7 +8,7 @@ const Faqsection = () => {
   return (
     <>
       <section
-        className={`${styles.paddings} bg-blue-200 m-4 rounded-xl relative z-10`}
+        className={`${styles.paddings} glassmorphism bg-blue-200 m-4 rounded-xl relative z-10`}
       >
         <motion.div
           variants={staggerContainer}

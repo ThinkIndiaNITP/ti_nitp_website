@@ -34,11 +34,11 @@ const Navbar = () => {
       className={`${
         styles.xPaddings
       } w-full fixed top-0 flex z-20 items-center  bg-gray-500 ${
-        scrolled ? "hero-gradient1 " : "bg-gray-400"
-      } `}
+        scrolled ? "hero-gradient1 " : "hero-gradient1"
+      } rounded-xl`}
     >
       <div
-        className={` w-full  mx-auto flex  justify-between items-center max-w-7xl`}
+        className={` w-full top-0 mx-auto flex  justify-between items-center max-w-7xl`}
       >
         <img
           src="/thinkinidalogo.png"
@@ -53,7 +53,7 @@ const Navbar = () => {
                 key={nav.id}
                 className="
                  text-black text-secondary
-               hover:text-orange-100 text-[18px] font-medium cursor-pointer"
+               hover:underline hover:text-xl text-[18px] font-medium cursor-pointer"
               >
                 <a href={nav.href}>{nav.title}</a>
               </li>
