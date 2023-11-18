@@ -31,9 +31,9 @@ export const navLinks = [
   },
   {
     id: 6,
-    name: "Contact Us",
-    href: "/Contact",
-    title: "Contact",
+    name: "FAQ & QnA",
+    href: "/Faqsection",
+    title: "FAQ & QnA",
   },
 ];
 

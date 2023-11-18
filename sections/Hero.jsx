@@ -15,7 +15,10 @@ const Hero = () => (
       className={`${styles.innerWidth} mx-auto flex flex-row`}
     >
       <div className="flex mt-6 justify-center  mb-20 items-center flex-col relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+        <motion.h1
+          variants={textVariant(1)}
+          className={`${styles.heroHeading}  italic `}
+        >
           ThinkIndia Nit Patna
           <br></br> Welcomes you
         </motion.h1>
