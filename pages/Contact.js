@@ -1,13 +1,70 @@
 import React from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiMail, FiPhone } from "react-icons/fi";
 
 const Contact = () => {
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [form, setForm] = useState("");
+
+  const handleChange = (e) => {
+    setInputs((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value,
+    }));
+  };
+
+  const onSubmitForm = async (e) => {
+    e.preventDefault();
+
+    if (inputs.name && inputs.email && inputs.message) {
+      setForm({ state: "loading" });
+      try {
+        const res = await fetch(`api/contact`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(inputs),
+        });
+
+        const { error } = await res.json();
+
+        if (error) {
+          setForm({
+            state: "error",
+            message: error,
+          });
+          return;
+        }
+
+        setForm({
+          state: "success",
+          message: "Your message was sent successfully.",
+        });
+        setInputs({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } catch (error) {
+        setForm({
+          state: "error",
+          message: "Something went wrong",
+        });
+      }
+    }
+  };
   return (
-    <div className="relative">
+    <div className=" relative">
       {/* Image Background */}
       <div
-        className="xl:container mx-auto mb-32 mt-20 w-full h-96"
+        className="xl:container mx-auto mb-32 mt-20 w-full  h-96"
         style={{
           background:
             "radial-gradient(circle, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0.5) 70%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%)",
@@ -22,7 +79,7 @@ const Contact = () => {
 
       {/* Form Container */}
       <motion.div
-        className="px-4 sm:w-2/3 lg:w-1/2 mx-auto -mt-72"
+        className="px-4 sm:w-2/3 lg:w-1/2 mx-auto -mt-96"
         whileHover={{
           scale: 0.9,
         }}
@@ -44,13 +101,16 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <form>
+            <form onSubmit={(e) => onSubmitForm(e)}>
               {/* Form fields go here */}
+
               <div className="mb-4">
                 <label htmlFor="name" className="block text-gray-600">
                   Name
                 </label>
                 <input
+                  value={inputs.name}
+                  onChange={handleChange}
                   type="text"
                   id="name"
                   className="w-full border border-gray-300 rounded-md py-2 px-3"
@@ -63,6 +123,8 @@ const Contact = () => {
                   Email
                 </label>
                 <input
+                  value={inputs.email}
+                  onChange={handleChange}
                   type="email"
                   id="email"
                   className="w-full border border-gray-300 rounded-md py-2 px-3"
@@ -75,18 +137,24 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
+                  value={inputs.message}
+                  onChange={handleChange}
                   id="message"
                   className="w-full border border-gray-300 rounded-md py-2 px-3"
                   placeholder="Enter message here..."
                 />
               </div>
-
-              <button
-                className="w-full px-6 py-3 bg-pink-600 text-white font-medium uppercase rounded shadow-md hover:bg-pink-500 hover:shadow-lg focus:bg-pink-600 focus:outline-none focus:ring-0 active-bg-pink-600"
+              <input
                 type="submit"
-              >
-                Send
-              </button>
+                className="w-full px-6 py-3 bg-pink-600 text-white font-medium uppercase rounded shadow-md hover:bg-pink-500 hover:shadow-lg focus:bg-pink-600 focus:outline-none focus:ring-0 active-bg-pink-600"
+              />
+              {form.state === "loading" ? (
+                <div>Sending....</div>
+              ) : form.state === "error" ? (
+                <div>{form.message}</div>
+              ) : (
+                form.state === "success" && <div>Sent successfully</div>
+              )}
             </form>
           </div>
         </div>

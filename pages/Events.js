@@ -35,7 +35,6 @@ const Events = () => {
             {exploreWorlds.map((world, index) => (
               <div key={world.id} className="w-full m-12 lg:w-1/4">
                 <ExploreCard
-                  key={world.id}
                   {...world}
                   index={index}
                   active={active}
