@@ -23,6 +23,7 @@ const Faqsection = () => {
           >
             <h3 className="mt-[8px] pr-52 font-bold md:text-[64px] text-[20px] text-black">
               FAQ Section
+              <img src="/faq.png" width="200px" height="100px" />
             </h3>
           </motion.div>
         </motion.div>
