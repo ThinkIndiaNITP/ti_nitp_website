@@ -14,6 +14,7 @@ const styles = {
   navPadding: "pt-[98px]",
 
   // hero section
+
   heroHeading:
     " lg:text-[80px] md:text-[80px] sm:text-[60px] text-[30px] lg:leading-[140.4px] md:leading-[100.4px] sm:leading-[74.4px] leading-[64.4px] text-black",
   heroDText:
