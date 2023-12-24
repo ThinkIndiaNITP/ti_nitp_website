@@ -1,7 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-
+import { Roboto } from "next/font/google";
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+  style: "italic",
+});
 import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
@@ -17,10 +22,11 @@ const Hero = () => (
       <div className="flex mt-6 justify-center  mb-20 items-center flex-col relative z-10">
         <motion.h1
           variants={textVariant(1)}
-          className={`${styles.heroHeading}  italic `}
+          className={`${styles.heroHeading}  font-mono relative text-xl before:absolute before:inset-0 before:animate-typewriter before:bg-white after:absolute after:inset-0 after:w-[0em] after:animate-caret after:bg-black  `}
         >
-          ThinkIndia Nit Patna
-          <br></br> Welcomes you
+          ThinkIndia NIT Patna
+          <br></br>
+          Welcomes you
         </motion.h1>
       </div>
 

@@ -10,6 +10,9 @@
   -ms-background-size: cover;
   background-size: cover;
 }
+h1 {
+  font-family: var(--font-roboto-mono);
+}
 * {
   margin: 0;
   padding: 0;
