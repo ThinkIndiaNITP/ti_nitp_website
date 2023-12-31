@@ -32,7 +32,7 @@ export const slideIn = (direction, type, delay, duration) => ({
       type,
       delay,
       duration,
-      ease: "easeOut",
+      ease: "easeInOut",
     },
   },
   viewport: {
