@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
         <div className="pb-12 sm:w-48 ">
           <Navbar />
         </div>
-        <div className="area bg-fixed">
+        <div className=" h-full area bg-fixed">
           <ul className="circles">
             <li></li>
             <li></li>

@@ -36,12 +36,44 @@ export const navLinks = [
     title: "FAQ & QnA",
   },
 ];
-
+export const data = [
+  {
+    link: "/contact.jpg",
+    image: "/contact.jpg",
+    comment: `you can add text with html tag <b>like this   </b>`,
+  },
+  {
+    link: "/contact.jpg",
+    image: "/contact.jpg",
+    comment: `you can add text with html tag <b>like this   </b>`,
+  },
+  {
+    link: "/contact.jpg",
+    image: "/contact.jpg",
+    comment: `you can add text with html tag <b>like this   </b>`,
+  },
+  {
+    link: "/contact.jpg",
+    image: "/contact.jpg",
+    comment: `you can add text with html tag <b>like this   </b>`,
+  },
+  {
+    link: "/contact.jpg",
+    image: "/contact.jpg",
+    comment: `you can add text with html tag <b>like this   </b>`,
+  },
+  {
+    link: "/contact.jpg",
+    image: "/contact.jpg",
+    comment: `you can add text with html tag <b>like this   </b>`,
+  },
+];
 export const exploreWorlds = [
   {
     id: 7,
     imgUrl: "./contact.jpg",
-    title: "Event-1",
+    title:
+      "Event-1 placed unplaced event held on 21 november on cv raman hall more information read more",
   },
   {
     id: 8,
