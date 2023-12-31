@@ -1,7 +1,7 @@
 "use client";
-
+import React from "react";
 import { motion } from "framer-motion";
-
+import Link from "next/link";
 import styles from "../styles";
 import { fadeIn } from "../utils/motion";
 
@@ -12,19 +12,19 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     className={`relative ${
       active === id ? "" : ""
     } flex items-center justify-center min-w-[200px] h-[500px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
-    onClick={() => handleClick(id)}
-    animate={{ scale: active === id ? 1.05 : 1 }}
-    transition={{ duration: 0.3 }}
+    // onClick={() => handleClick(id)}
+    // animate={{ scale: active === id ? 1.05 : 1 }}
+    // transition={{ duration: 0.3 }}
   >
     <img
       src={imgUrl}
       alt="Events.."
       className="absolute w-full h-full object-cover rounded-[24px]"
     />
-    {active !== id ? (
-      <h3 className="font-semibold sm:text-[26px] text-[18px] text-orange-500 absolute z-0 lg:bottom-20  lg:origin-[0,0]">
+    {active == id ? (
+      <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-black">
         {title}
-      </h3>
+      </h2>
     ) : (
       <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col glassmorphism rounded-b-[24px]">
         <div
@@ -39,9 +39,15 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         <p className="font-normal text-[16px] leading-[20.16px] text-black uppercase">
           Explore..
         </p>
-        <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-black">
-          {title}
-        </h2>
+
+        <h3 className="font-medium text-xl leading-8">
+          <a
+            // href={title}
+            className="block relative group-hover:text-purple-500 transition-colors duration-200"
+          >
+            <span dangerouslySetInnerHTML={{ __html: title }} />
+          </a>
+        </h3>
       </div>
     )}
   </motion.div>

@@ -10,6 +10,7 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      backgroundImage: {},
       colors: {
         "primary-black": "#1A232E",
         "secondary-white": "#c7c7c7",
