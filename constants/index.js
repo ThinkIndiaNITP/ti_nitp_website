@@ -73,27 +73,32 @@ export const exploreWorlds = [
     id: 7,
     imgUrl: "./contact.jpg",
     title:
-      "Event-1 placed unplaced event held on 21 november on cv raman hall more information read more",
+      "Ideathon: Participants were given topics before hand and the event compromised of 2 rounds. 1st was Screening Round in which participants were required to submit a PPT of the topics they were gonna to present to the Jury on the final hand. In the 2nd round the selected participants of the 1st round were given a chance to represent their ideas to the Jury. Judging was done on the basis of Presenting Style, authenticity of ideas, QnA round by the Judges and the audience. ",
   },
   {
     id: 8,
     imgUrl: "./contactus1.jpg",
-    title: "Event-2",
+    title: "The Y 20 Conference: Event compromised of 2 rounds. 1st was Screening Round in which participants were selected for the table after a very challenging Online Meet-up. They were given the topics on the point and were asked to have a round of discussions. After the 1st round participants who got selected got role of Head Of State, NSA & the Foreign Minister according to their performance in Online Meet-up round. Topics were given 2 hand before the final commencement of the conference. Judging was done on the way of presenting skills, discipline, knowledge and content authenticity.",
   },
   {
     id: 9,
     imgUrl: "./contact.jpg",
-    title: "Event-3",
+    title: "Article Writing: Participants were given topics on the D day and were given a time limit of 30minutes to express themselves on the sheets provided to them. Judging was done on the basis of writing style, Vocabulary standard of language, originality.",
   },
   {
     id: 10,
     imgUrl: "./contact.jpg",
-    title: "Event-4",
+    title: "Policy Drafting: Participants were given topics before hand and were given a time limit of 10minutes to present themselves to the panel of jury. Judging was done on the basis of authenticity of idea, performance in question and answer session by Judges and interaction with audience.",
   },
   {
     id: 11,
     imgUrl: "./contact.jpg",
-    title: "Event-5",
+    title: "Best Out of Waste : Participants were free to use their artistic , creative and innovative ideas to create amazing goods from the waste they had collected. Judging was done on the basis of Aesthetics and visual appeal, productiveness of the products created and most importantly , Waste Management of the wastes.",
+  },
+  {
+    id: 16,
+    imgUrl: "./contact.jpg",
+    title: "Doodling Competition: Participants were asked to do DOODLING on A4 sheet on the theme related to G20 summit. They were given a time limit of 90 minutes to show their artistic mind. Judging was done on the basis of Aesthetics and visual appeal, creativity and originality.",
   },
 ];
 

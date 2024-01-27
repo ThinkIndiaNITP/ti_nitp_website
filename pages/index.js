@@ -4,32 +4,8 @@ import Contact from "./Contact";
 // import Image from "next/image";
 const Home = () => (
   <>
-    {/* <div className="area bg-fixed">
-      <ul className="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div> */}
-    <div
-    // style={{
-    //   width: "100%",
-    //   height: "100%",
-    //   // backgroundImage: 'url("./bg.png")',
-    //   backgroundSize: "cover",
-    //   // opacity: 0.4,
-    //   zIndex: 10,
-    //   backgroundPosition: "center",
-    // }}
-    >
-      {/* <Image src="/bg.png" alt="Background Image" width={1000} height={1000} /> */}
+    
+    <div>
       <div className="mx-auto">
         <Hero />
       </div>
