@@ -16,7 +16,7 @@ const Gallery = () => {
       <div className=" mx-auto m-12">
         <div className="p-6 container mx-auto">
           <div className="py-2">
-            <h1 className="text-center text-transparent  font-extrabold bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-4xl">
+            <h1 className="text-center text-transparent  font-extrabold bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-5xl">
               My Gallery
             </h1>
           </div>
@@ -37,7 +37,7 @@ const Gallery = () => {
                         alt=""
                       />
                       <Link
-                        className="flex justify-center items-center bg-purple-500 bg-opacity-80  absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 text-xl group-hover:opacity-100"
+                        className="flex justify-center items-center bg-orange-600 bg-opacity-40  absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 text-xl group-hover:opacity-100"
                         href={x.image}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -45,14 +45,14 @@ const Gallery = () => {
                         Click for Full Image
                       </Link>
                     </div>
-                    {/* <h3 className="font-medium text-xl leading-8">
+                    <h3 className="font-medium text-xl leading-8">
                       <Link
                         href="https://animeflyx.vercel.app/"
-                        className="block relative group-hover:text-purple-500 transition-colors duration-200"
+                        className="block relative group-hover:text-orange-600 transition-colors duration-200 text-center"
                       >
                         <span dangerouslySetInnerHTML={{ __html: x.comment }} />
                       </Link>
-                    </h3> */}
+                    </h3>
                   </article>
                 </>
               );

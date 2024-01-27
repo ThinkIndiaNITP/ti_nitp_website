@@ -38,34 +38,64 @@ export const navLinks = [
 ];
 export const data = [
   {
-    link: "/contact.jpg",
-    image: "/contact.jpg",
-    comment: `you can add text with html tag <b>like this   </b>`,
+    link: "https://drive.google.com/file/d/1vqRMzUvkJEgZyQHRUzUP77sBvz8zAR6B/view?usp=drive_link",
+    image: "/galleryImages/articleWriting.jpg",
+    comment: ` <b> Article Writing </b>`,
   },
   {
-    link: "/contact.jpg",
-    image: "/contact.jpg",
-    comment: `you can add text with html tag <b>like this   </b>`,
+    link: "https://drive.google.com/file/d/1kxxfK4xmA-P_51VC6w_OTGmzO-qoRyxp/view?usp=drive_link",
+    image: "/galleryImages/conclaveSes1.jpg",
+    comment: `<b>G20 Conclave ( Session 1 )</b>`,
   },
   {
-    link: "/contact.jpg",
-    image: "/contact.jpg",
-    comment: `you can add text with html tag <b>like this   </b>`,
+    link: "https://drive.google.com/file/d/1FvexNuL_sa2U8cg-2Q5lMY4p37YsNCtg/view?usp=drive_link",
+    image: "/galleryImages/ideathon.jpg",
+    comment: `<b>Ideathon</b>`,
   },
   {
-    link: "/contact.jpg",
-    image: "/contact.jpg",
-    comment: `you can add text with html tag <b>like this   </b>`,
+    link: "https://drive.google.com/file/d/1FvexNuL_sa2U8cg-2Q5lMY4p37YsNCtg/view?usp=drive_link",
+    image: "/galleryImages/nukkad.jpg",
+    comment: `<b>Nukkad Natak</b>`,
   },
   {
-    link: "/contact.jpg",
-    image: "/contact.jpg",
-    comment: `you can add text with html tag <b>like this   </b>`,
+    link: "https://drive.google.com/file/d/1OQ8VLySmrrQkkYShnVbY9NUlD46YDAMD/view?usp=drive_link",
+    image: "/galleryImages/doodling.jpg",
+    comment: `<b>Doodling</b>`,
   },
   {
-    link: "/contact.jpg",
-    image: "/contact.jpg",
-    comment: `you can add text with html tag <b>like this   </b>`,
+    link: "https://drive.google.com/file/d/1BSySw2LQZv9n1xtY8Ti1F3IPDOPH9u05/view?usp=drive_link",
+    image: "/galleryImages/conclaveSes2.jpg",
+    comment: `<b>G20 Conclave ( Session 2 )</b>`,
+  },
+  {
+    link: "https://drive.google.com/file/d/1G2W55heyvVeHnQk01OcxGvDJd_4DDG2L/view?usp=drive_link",
+    image: "/galleryImages/policyDrafting.jpg",
+    comment: `<b>Policy Drafting</b>`,
+  },
+  {
+    link: "https://drive.google.com/file/d/1MB-kBYBrHUzzV4VdKRKK4Y8K8GCm2Tuq/view?usp=drive_link",
+    image: "/galleryImages/y20conf.jpg",
+    comment: `<b>Youth 20 Conference</b>`,
+  },
+  {
+    link: "https://drive.google.com/file/d/1TolngN2zfAo9oUY6NTawqzEs-rqIUQrQ/view?usp=drive_link",
+    image: "/galleryImages/bow.jpg",
+    comment: `<b>Best Out of Waste</b>`,
+  },
+  {
+    link: "https://drive.google.com/file/d/11tTOOTtsC0fonuMJkE409apnshRdMOMe/view?usp=drive_link",
+    image: "/galleryImages/conclaveSes3.jpg",
+    comment: `<b>G20 Conclave ( Session 3 )</b>`,
+  },
+  {
+    link: "https://drive.google.com/file/d/1QZ8VgqQ0wJK25kaxUgf9Cxut8SdQhkqT/view?usp=drive_link",
+    image: "/galleryImages/rangoli.jpg",
+    comment: `<b>Rangoli Making</b>`,
+  },
+  {
+    link: "https://drive.google.com/file/d/14jFw5CWFM9eOnq7vPZ1O8F8UT85GUPWg/view?usp=drive_link",
+    image: "/galleryImages/placed.jpg",
+    comment: `<b>Placed Unplaced</b>`,
   },
 ];
 export const exploreWorlds = [
