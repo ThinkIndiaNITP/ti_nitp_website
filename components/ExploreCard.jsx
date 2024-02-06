@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-// import Link from "next/link";
 import styles from "../styles";
 import { fadeIn } from "../utils/motion";
 
@@ -12,9 +11,6 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     className={`relative ${
       active === id ? "" : ""
     } flex items-center justify-center min-w-[200px] h-[500px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
-    // onClick={() => handleClick(id)}
-    // animate={{ scale: active === id ? 1.05 : 1 }}
-    // transition={{ duration: 0.3 }}
   >
     <img
       src={imgUrl}
@@ -40,11 +36,9 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
           Explore..
         </p>
 
-        <h3 className="font-medium text-xl leading-8">
-          <a
-            // href={title}
-            className="block relative group-hover:text-purple-500 transition-colors duration-200"
-          >
+        <h3 className="font-medium text-xl leading-8 overflow-y-auto max-h-32">
+          {/* Apply overflow-y-auto and max-h-24 to allow scrolling when content overflows */}
+          <a className="block relative group-hover:text-purple-500 transition-colors duration-200">
             <span dangerouslySetInnerHTML={{ __html: title }} />
           </a>
         </h3>
