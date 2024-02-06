@@ -280,6 +280,27 @@ const teamData2 = [
     imageSrc:
       "https://www.nitp.ac.in/static/4017376d992d9de6b8785b862bacd757/d8255/asd_1920x1080.jpg",
   },
+  {
+    id: "team57",
+    name: "Saurav Kumar",
+    role: "SENIOR MEMBER",
+    imageSrc:
+      "https://www.nitp.ac.in/static/4017376d992d9de6b8785b862bacd757/d8255/asd_1920x1080.jpg",
+  },
+  {
+    id: "team57",
+    name: "Deepak Kumar",
+    role: "SENIOR MEMBER",
+    imageSrc:
+      "https://www.nitp.ac.in/static/4017376d992d9de6b8785b862bacd757/d8255/asd_1920x1080.jpg",
+  },
+  {
+    id: "team57",
+    name: "Munquab Anwer",
+    role: "SENIOR MEMBER",
+    imageSrc:
+      "https://www.nitp.ac.in/static/4017376d992d9de6b8785b862bacd757/d8255/asd_1920x1080.jpg",
+  },
   // Add more team members here
 ];
 
